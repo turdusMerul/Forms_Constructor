@@ -1,0 +1,46 @@
+{
+    "form_name": "test_form",
+    "title": "Тестовая форма записи",
+    "is_active": true,
+    "field_groups": [
+        {
+            "group_name": "ticket_info",
+            "fields": [
+                {
+                    "name": "ticket_type",
+                    "type": "select",
+                    "label": "Тип обращения",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [
+                        {
+                            "value": null,
+                            "label": "-- Выберите значение --",
+                            "is_default": true,
+                            "conditions_groups": []
+                        }
+                    ],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        },
+        {
+            "group_name": "personal_data",
+            "fields": [
+                {
+                    "name": "patient_fio",
+                    "type": "text",
+                    "label": "ФИО",
+                    "placeholder": "Фамилия Имя Отчество",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        }
+    ]
+}
