@@ -1,0 +1,201 @@
+{
+    "form_name": "test_form",
+    "title": "Тестовая форма записи",
+    "is_active": true,
+    "field_groups": [
+        {
+            "name": "ticket_info",
+            "label": "Данные об обращении",
+            "fields": [
+                {
+                    "name": "ticket_type",
+                    "type": "select",
+                    "label": "Тип обращения",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [
+                        {
+                            "value": null,
+                            "label": "-- Выберите значение --",
+                            "is_disabled": true,
+                            "is_default": true,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "new",
+                            "label": "Запись на приём / исследование",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "move",
+                            "label": "Перенос записи",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "delete",
+                            "label": "Отмена записи",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        }
+                    ],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        },
+        {
+            "name": "ticket_info",
+            "label": "Данные направления",
+            "fields": [
+                {
+                    "name": "ref_num",
+                    "type": "text",
+                    "label": "Номер",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "ref_date",
+                    "type": "date",
+                    "label": "Дата выдачи",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "ref_file",
+                    "type": "file",
+                    "label": "Скан / Фото",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        },
+        {
+            "name": "ticket_info",
+            "label": "Данные выписки",
+            "fields": [
+                {
+                    "name": "extract_num",
+                    "type": "text",
+                    "label": "Номер",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "extract_date",
+                    "type": "date",
+                    "label": "Дата выдачи",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "extract_file",
+                    "type": "file",
+                    "label": "Скан / Фото",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        },
+        {
+            "name": "personal_data",
+            "label": "Персональные данные пациента",
+            "fields": [
+                {
+                    "name": "patient_fio",
+                    "type": "text",
+                    "label": "Фамилия",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "patient_fio",
+                    "type": "text",
+                    "label": "Имя",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "patient_fio",
+                    "type": "text",
+                    "label": "Отчество",
+                    "placeholder": "",
+                    "is_required": false,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "patient_address",
+                    "type": "text",
+                    "label": "Адрес",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        },
+        {
+            "name": "contact_data",
+            "label": "Контактные данные",
+            "fields": [
+                {
+                    "name": "patient_tel",
+                    "type": "phone",
+                    "label": "Телефон",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "patient_email",
+                    "type": "email",
+                    "label": "Электронная почта",
+                    "placeholder": "mail@host.ru",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [],
+                    "conditions_groups": []
+                }
+            ],
+            "conditions_groups": []
+        }
+    ]
+}
