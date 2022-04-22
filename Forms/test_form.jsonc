@@ -23,8 +23,22 @@
                             "conditions_groups": []
                         },
                         {
-                            "value": "new",
+                            "value": "new_consresearch",
                             "label": "Запись на приём / исследование",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "new_donation",
+                            "label": "Запись на донацию",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "new_dent",
+                            "label": "Запись на стоматологическое лечение",
                             "is_disabled": false,
                             "is_default": false,
                             "conditions_groups": []
@@ -39,6 +53,77 @@
                         {
                             "value": "delete",
                             "label": "Отмена записи",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        }
+                    ],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "payment_type",
+                    "type": "select",
+                    "label": "Вид обслуживания",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [
+                        {
+                            "value": null,
+                            "label": "-- Выберите значение --",
+                            "is_disabled": true,
+                            "is_default": true,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "oms",
+                            "label": "По направлению из районной поликлиники",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "army",
+                            "label": "По направлению из военкомата",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "pmu",
+                            "label": "За счёт личных средств",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        }
+                    ],
+                    "conditions_groups": []
+                },
+                {
+                    "name": "registration_type",
+                    "type": "select",
+                    "label": "Тип записи",
+                    "placeholder": "",
+                    "is_required": true,
+                    "is_hidden": false,
+                    "sel_options": [
+                        {
+                            "value": null,
+                            "label": "-- Выберите значение --",
+                            "is_disabled": true,
+                            "is_default": true,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "consultation",
+                            "label": "Приём врача",
+                            "is_disabled": false,
+                            "is_default": false,
+                            "conditions_groups": []
+                        },
+                        {
+                            "value": "research",
+                            "label": "Исследование",
                             "is_disabled": false,
                             "is_default": false,
                             "conditions_groups": []

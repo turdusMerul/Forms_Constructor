@@ -1,0 +1,86 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.form_anchor {
+    padding: 12px 0;
+}
+
+.generated_form {
+    align-self: center;
+    max-width: 350px;
+    margin: auto;
+}
+
+.fields_group {
+    margin-bottom: 12px;
+    padding: 12px 12px 0px 12px;
+    border: 1px dotted;
+    border-radius: 8px;
+    border-color: gray;
+}
+
+.fields_group_title {
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.form_field_wrap {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.form_field_label {
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.form_field {
+    width: 100%;
+    height: 26px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.form_field.select {
+    cursor: pointer;
+}
+
+.form_field.date {
+    cursor: text;
+}
+
+.form_field.file {
+    display: none;
+}
+
+.form_field_extra.file{
+    height: 60px;
+    cursor: pointer;
+    border-style: dashed;
+    border-color: lightgray;
+    border-width: 1px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 16px;
+    background: url("../Pics/file_dropzone.png") no-repeat center;
+
+}
